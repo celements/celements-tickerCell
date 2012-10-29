@@ -5,7 +5,7 @@
 ##TODO move to component
 ## compute tickerElemList
 #set($tickerElemList = [])
-#set($tickerSpace = "$!doc.getProperty('tickerSpace').getValue()")
+#set($tickerSpace = "$!tickerObj.getProperty('tickerSpace').getValue()")
 #if("$!tickerSpace" != '')
 #set($blogPageDoc = '')
 #set($blogPageDoc = $xwiki.celementsblog.getBlogPageByBlogSpace($tickerSpace))
