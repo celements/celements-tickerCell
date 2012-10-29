@@ -39,7 +39,7 @@ unknown ticker type
 	<li>
 		#set($columnConfig = $tickerObj.getProperty('columnConfig').getValue().split(','))
 		#foreach($columnName in $columnConfig)
-			<div class="celTicker_$!{columnName}">$tickerElem.get('title')</div>
+			<div class="celTicker_$!{columnName}">$!{tickerElem.get("$!columnName")}</div>
 		#end
     <div class="clearleft"><!-- required:floating images --></div>
 	</li>
