@@ -79,6 +79,8 @@ public class TickerCellClassCollection extends AbstractClassCollection {
     needsUpdate |= bclass.addTextField("tickerSpace", "Ticker Space Name", 30);
     needsUpdate |= bclass.addBooleanField("showArchive", "Show Archive", "yesno");
     needsUpdate |= bclass.addTextField("columnConfig", "Column Configuration", 30);
+    needsUpdate |= bclass.addNumberField("maxCount", "number of elements to show", 5,
+        "integer");
     
     setContentAndSaveClassDocument(doc, needsUpdate);
     return bclass;
