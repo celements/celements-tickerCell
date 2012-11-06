@@ -31,7 +31,7 @@
   <modelVersion>4.0.0</modelVersion>  
   <groupId>com.celements</groupId>
   <artifactId>celements-tickerCell</artifactId>
-  <version>0.1-SNAPSHOT</version>
+  <version>0.1</version>
   <description>Celements TickerCell</description> 
   <dependencies>    
     <!-- Add here all your dependencies -->
@@ -46,6 +46,6 @@
     <connection>scm:git:git@github.com:celements/celements-tickerCell.git</connection>
     <developerConnection>scm:git:git@github.com:celements/celements-tickerCell.git</developerConnection>
     <url>https://github.com/celements/celements-tickerCell</url>
-    <tag>HEAD</tag>
+    <tag>celements-tickerCell-0.1</tag>
   </scm>
 </project>
