@@ -12,8 +12,8 @@ $cellObj.set('menu_element_name', "$cellObj.fullName");
 $doc.save()
 $response.sendRedirect($doc.getURL('edit', $redirectStr))
 #end
-<div id="navigationCellEdit">
-<h1>Page Dependend Content Cell</h1>
+<div id="tickerCellEdit" style="padding:10px;">
+<h1>Ticker</h1>
 <form id="edit" method="post" action="$xwiki.getURL($doc.getFullName(), 'save')" target="_parent">
     <input type="hidden" name="template" value="$!doc.getTemplate()" />
     <input type="hidden" name="xredirect" value="$!xredirect" />
