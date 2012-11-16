@@ -26,6 +26,7 @@ $response.sendRedirect($doc.getURL('edit', $redirectStr))
 #set($cel_editobj_externalForm = true)
 #set($cel_editobj_properties = 'tickerSpace,showArchive,columnConfig,maxCount')
 #set($cel_editobj_readonly_properties = '')
+#set($cel_editobj_dict_property_prefix = 'tickerCellEdit_')
 $xwiki.parseTemplate("celTemplates/ObjectEdit.vm")
 </form>
 </div>
