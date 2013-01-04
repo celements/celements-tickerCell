@@ -44,7 +44,11 @@
 #elseif("$!calPageDocRef" != '')
 #set($calApi = $services.celcalendar.getCalendarByCalRef($calPageDocRef, $isArchive))
 #foreach($eventApi in $calApi.getEvents(0, $maxCount))
+#if("$!eventApi.getEventDate()" != '')
 #set($creationDateStr = $xwiki.formatDate($eventApi.getEventDate(), $blog_dateFormat))
+#else
+#set($creationDateStr = "N/A")
+#end
 #set($tickerElem = {})
 #set($!dev = $tickerElem.put('title', "$eventApi.getTitle()"))
 #set($!dev = $tickerElem.put('date', "$!creationDateStr"))
