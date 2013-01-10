@@ -1,4 +1,8 @@
+#if("$!celldoc" != '')
+#set($tickerObj = $celldoc.getObject('Classes.TickerCellClass', false))
+#else
 #set($tickerObj = $doc.getObject('Classes.TickerCellClass', false))
+#end
 <div id="cellPDContent$!{pdCount}$!{pageDoc.getName()}:$!isInheritable:$!{pageDepFN}"##
  class="cel_cm_pagedependent_content">
 <ul>
