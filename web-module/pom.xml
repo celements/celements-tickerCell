@@ -33,7 +33,7 @@
   <artifactId>tickerCell-web</artifactId>
   <packaging>war</packaging>
   <name>tickerCell Web-Module</name>
-  <version>0.4-SNAPSHOT</version>
+  <version>0.5-SNAPSHOT</version>
   <description>	</description>
   <licenses>
     <license>
