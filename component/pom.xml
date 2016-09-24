@@ -30,7 +30,7 @@
   </parent>
   <modelVersion>4.0.0</modelVersion>  
   <artifactId>celements-tickerCell</artifactId>
-  <version>0.3-SNAPSHOT</version>
+  <version>0.4-SNAPSHOT</version>
   <description>Celements TickerCell</description> 
   <dependencies>    
     <!-- Add here all your dependencies -->
