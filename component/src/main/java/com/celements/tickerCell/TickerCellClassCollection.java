@@ -19,8 +19,6 @@
  */
 package com.celements.tickerCell;
 
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
 import org.xwiki.component.annotation.Component;
 import org.xwiki.model.reference.DocumentReference;
 
@@ -36,14 +34,6 @@ public class TickerCellClassCollection extends AbstractClassCollection {
   public static final String TICKERCELL_CLASS_DOC = "TickerCellClass";
   public static final String TICKER_CLASSES_SPACE = "Classes";
 
-  private static Log LOGGER = LogFactory.getFactory().getInstance(
-      TickerCellClassCollection.class);
-
-  @Override
-  protected Log getLogger() {
-    return LOGGER;
-  }
-
   public TickerCellClassCollection() {}
 
   @Override
@@ -51,6 +41,7 @@ public class TickerCellClassCollection extends AbstractClassCollection {
     getTickerCellClass();
   }
 
+  @Override
   public String getConfigName() {
     return "celTickerCell";
   }
@@ -64,7 +55,7 @@ public class TickerCellClassCollection extends AbstractClassCollection {
     XWikiDocument doc;
     XWiki xwiki = getContext().getWiki();
     boolean needsUpdate = false;
-    
+
     try {
       doc = xwiki.getDocument(classRef, getContext());
     } catch (XWikiException exp) {
@@ -72,16 +63,16 @@ public class TickerCellClassCollection extends AbstractClassCollection {
       doc = new XWikiDocument(classRef);
       needsUpdate = true;
     }
-    
+
     BaseClass bclass = doc.getXClass();
     bclass.setDocumentReference(classRef);
-    
+
     needsUpdate |= bclass.addTextField("tickerSpace", "Ticker Space Name", 30);
     needsUpdate |= bclass.addBooleanField("showArchive", "Show Archive", "yesno");
     needsUpdate |= bclass.addTextField("columnConfig", "Column Configuration", 30);
     needsUpdate |= bclass.addNumberField("maxCount", "number of elements to show", 5,
         "integer");
-    
+
     setContentAndSaveClassDocument(doc, needsUpdate);
     return bclass;
   }
