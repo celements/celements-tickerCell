@@ -30,7 +30,7 @@
   <artifactId>tickerCell-web</artifactId>
   <packaging>war</packaging>
   <name>tickerCell Web-Module</name>
-  <version>6.0</version>
+  <version>6.1-SNAPSHOT</version>
   <description>	</description>
   <licenses>
     <license>
@@ -43,7 +43,7 @@
     <connection>scm:git:git://github.com/celements/celements-tickerCell</connection>
     <developerConnection>scm:git:git@github.com:celements/celements-tickerCell.git</developerConnection>
     <url>https://github.com/celements/celements-tickerCell</url>
-    <tag>tickerCell-web-6.0</tag>
+    <tag>HEAD</tag>
   </scm>
   <dependencies>
     <dependency>
