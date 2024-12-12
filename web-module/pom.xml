@@ -30,7 +30,7 @@
   <artifactId>tickerCell-web</artifactId>
   <packaging>war</packaging>
   <name>tickerCell Web-Module</name>
-  <version>6.1-SNAPSHOT</version>
+  <version>6.2-SNAPSHOT</version>
   <description>	</description>
   <licenses>
     <license>
