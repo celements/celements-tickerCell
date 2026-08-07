@@ -7,7 +7,7 @@
   </parent>
   <modelVersion>4.0.0</modelVersion>
   <artifactId>tickerCell-web</artifactId>
-  <version>7.1-SNAPSHOT</version>
+  <version>7.1</version>
   <packaging>war</packaging>
   <name>tickerCell Web-Module</name>
   <description>	</description>
@@ -22,7 +22,7 @@
     <connection>scm:git:git://github.com/celements/celements-tickerCell</connection>
     <developerConnection>scm:git:git@github.com:celements/celements-tickerCell.git</developerConnection>
     <url>https://github.com/celements/celements-tickerCell</url>
-    <tag>HEAD</tag>
+    <tag>tickerCell-web-7.1</tag>
   </scm>
   <dependencies>
     <dependency>
